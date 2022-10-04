@@ -1,0 +1,667 @@
+{% if plugin.is_building %}
+{% include "sites/index.html" %}
+{% else %}
+{% extends "sites/theme_fhh_computer/vi/common/layout.html" %}
+{%block meta_seo%}
+{% include "fhh-framework/seo/include/home.html" %}
+{%endblock%}
+{% block content %}
+<section class="detail_product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-left">
+                <div class="row row-img-items">
+                    <div class="col-md-6 col-6 col ">
+                        <!-- Không vd -->
+                        <!-- <div class="product-gallery-item">
+                            <img src="{{url_for('home.static_theme', filename='img/1569618582000635907_polomanor_ao_polo_basic_vee_xanh2.jpeg')}}" alt="">
+                            
+                        </div> -->
+                        <!-- có vd -->
+                        <section class="banner-video ratio ratio-1x1 ratio-21x9">
+                            <video width="100%" loop autoplay muted id="banner-video">
+                                <source src="{{url_for('home.static_theme', filename='img/1572088157388673024.mp4')}}" type="video/mp4">
+                            </video>
+                            <div class="btn-click-video pause-video"></div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 col-6 col">
+                        <div class="product-gallery-item">
+                            <img src="{{url_for('home.static_theme', filename='img/1569618582000635907_polomanor_ao_polo_basic_vee_xanh2.jpeg')}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-12 col">
+                        <div class="endow-item-block">
+                            <div class="endow-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M9.00007 0.00683594C7.21997 0.00683597 5.4798 0.534258 3.99973 1.52326C2.51965 2.51227 1.36613 3.91862 0.684994 5.56325C0.00385499 7.20789 -0.174367 9.01843 0.173036 10.7643C0.520439 12.5102 1.37778 14.1123 2.63662 15.3709C3.89546 16.6295 5.49933 17.4868 7.24527 17.8339C8.99121 18.181 10.8008 18.0028 12.4453 17.3213C14.0898 16.6399 15.4953 15.487 16.4841 14.0068C17.4728 12.5265 18.0004 10.7856 18.0001 9.00551C17.9996 6.61885 17.0512 4.33086 15.3634 2.64339C13.6756 0.955926 11.3867 0.0068359 9.00007 0.00683594ZM11.1951 13.1945H4.54444C4.44932 13.2081 4.35247 13.2004 4.26031 13.1732C4.16815 13.1461 4.08284 13.1003 4.01027 13.0373C3.93769 12.9743 3.87953 12.8955 3.83965 12.808C3.79976 12.7206 3.77906 12.6257 3.77906 12.5297C3.77906 12.4336 3.79976 12.3387 3.83965 12.2513C3.87953 12.1638 3.93769 12.0866 4.01027 12.0236C4.08284 11.9607 4.16815 11.9149 4.26031 11.8877C4.35247 11.8606 4.44932 11.8529 4.54444 11.8664H11.1951C11.7924 11.8307 12.3535 11.5683 12.7638 11.1328C13.1741 10.6972 13.4026 10.1214 13.4026 9.523C13.4026 8.92463 13.1741 8.34879 12.7638 7.91323C12.3535 7.47766 11.7924 7.21532 11.1951 7.17958H6.1493L7.04138 8.07044C7.10294 8.13181 7.15176 8.20468 7.18508 8.28496C7.21841 8.36525 7.23554 8.45023 7.23554 8.53716C7.23554 8.62408 7.21841 8.7107 7.18508 8.79099C7.15176 8.87127 7.10294 8.94414 7.04138 9.00551C6.98071 9.0683 6.90805 9.1188 6.82768 9.1529C6.7473 9.187 6.66085 9.20366 6.57354 9.20366C6.48623 9.20366 6.39978 9.187 6.3194 9.1529C6.23902 9.1188 6.16637 9.0683 6.10569 9.00551L4.12695 7.03055L4.07997 6.9847C4.05101 6.95636 4.02464 6.92602 4.00116 6.89299C3.99502 6.88293 3.98991 6.87136 3.98601 6.86024C3.96715 6.83362 3.95147 6.80529 3.93913 6.77509C3.93806 6.77125 3.93806 6.76746 3.93913 6.76362C3.92168 6.72455 3.90923 6.68301 3.90218 6.6408C3.89372 6.59943 3.88985 6.55693 3.89052 6.51471C3.88979 6.47303 3.89365 6.43268 3.90218 6.39188C3.90976 6.34926 3.92219 6.30726 3.93913 6.26743C3.93797 6.2636 3.93797 6.25979 3.93913 6.25596C3.9548 6.21958 3.97389 6.18393 3.99614 6.15116C4.02012 6.11595 4.047 6.08354 4.07659 6.0529L4.12357 6.00541L6.10232 4.02881C6.15992 3.95146 6.23358 3.88681 6.31817 3.84049C6.40277 3.79416 6.49627 3.76711 6.59247 3.76024C6.68868 3.75337 6.78526 3.76735 6.87558 3.80118C6.9659 3.83501 7.04788 3.88837 7.1159 3.95676C7.18391 4.02514 7.23638 4.10699 7.26973 4.19748C7.30307 4.28798 7.31652 4.38463 7.30913 4.48079C7.30175 4.57695 7.27372 4.66993 7.22695 4.75427C7.18017 4.83862 7.11567 4.91161 7.03801 4.9688L6.1493 5.85802H11.2001C12.1736 5.85802 13.1073 6.24389 13.7957 6.9323C14.4841 7.6207 14.8709 8.55436 14.8709 9.52791C14.8709 10.5015 14.4841 11.4351 13.7957 12.1235C13.1073 12.8119 12.1736 13.1994 11.2001 13.1994L11.1951 13.1945Z" fill="#212121"></path>
+                                </svg>
+                                <p><strong>Đổi trả miễn phí</strong> <br> trong vòng 30 ngày</p>
+                            </div>
+                            <div class="endow-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="19" viewBox="0 0 36 19" fill="none">
+                                    <g clip-path="url(#clip0_1291_11711)">
+                                        <path d="M35.7857 11.6795C35.855 11.7499 35.9099 11.8334 35.9474 11.9253C35.9848 12.0172 36.0039 12.116 36.0038 12.2154V16.567H35.2074C35.2074 15.5678 34.8163 14.6108 34.1199 13.9043C33.4235 13.1978 32.479 12.7993 31.4941 12.7993C30.5093 12.7993 29.5648 13.1978 28.8684 13.9043C28.172 14.6108 27.7808 15.5678 27.7808 16.567H26.9844V6.04373C26.9844 5.843 27.063 5.64981 27.2029 5.50787C27.3428 5.36593 27.5326 5.28613 27.7305 5.28613H30.9998C31.1465 5.28641 31.2898 5.33118 31.4119 5.41363C31.534 5.49608 31.6294 5.61278 31.6863 5.74993L32.8688 8.6288C32.9053 8.71986 32.9598 8.80217 33.0291 8.87087L35.7857 11.6795Z" fill="#212121"></path>
+                                        <path d="M25.7289 1.54381V16.0195C25.7294 16.092 25.7157 16.163 25.6886 16.2301C25.6615 16.2973 25.6216 16.358 25.5711 16.4094C25.5206 16.4607 25.4605 16.5018 25.3944 16.5295C25.3284 16.5572 25.2576 16.5722 25.1861 16.572H17.2146C17.0787 16.5675 16.9491 16.513 16.8499 16.4186C16.7507 16.3242 16.6888 16.1956 16.6757 16.0583C16.5461 15.1124 16.0676 14.2509 15.337 13.6487C14.6064 13.0466 13.678 12.7485 12.7388 12.8135C11.7997 12.8786 10.9197 13.3025 10.2765 13.9998C9.63337 14.6971 9.27488 15.617 9.27319 16.572H8.24365V1.54381C8.24414 1.39793 8.30135 1.25892 8.40302 1.15577C8.5047 1.05262 8.64263 0.993663 8.78642 0.993164H25.1879C25.3314 0.99416 25.4687 1.05267 25.57 1.15577C25.6712 1.25887 25.7284 1.39826 25.7289 1.54381Z" fill="#212121"></path>
+                                        <path d="M6.85421 15.0693H0V16.566H6.85421V15.0693Z" fill="#212121"></path>
+                                        <path d="M6.85245 12.21H2.08154V13.7066H6.85245V12.21Z" fill="#212121"></path>
+                                        <path d="M15.3851 16.5722C15.384 17.0519 15.2427 17.5191 14.9794 17.9174C14.716 18.3158 14.3422 18.6269 13.9052 18.8099C13.4682 18.993 12.9876 19.0405 12.5239 18.9467C12.0603 18.8528 11.6343 18.6206 11.2999 18.2815C10.9656 17.9423 10.7379 17.512 10.6454 17.0416C10.5529 16.5712 10.5997 16.0825 10.7802 15.6391C10.9606 15.1957 11.2666 14.8161 11.6592 14.5489C12.0519 14.2817 12.5137 14.1398 12.9865 14.1387C13.3019 14.1374 13.6143 14.1998 13.9059 14.3216C14.1974 14.4435 14.4622 14.622 14.6852 14.8482C14.9082 15.0744 15.0849 15.3433 15.205 15.6391C15.3251 15.9349 15.3863 16.2523 15.3851 16.5722Z" fill="#212121"></path>
+                                        <path d="M33.8775 16.5722C33.8753 17.0508 33.7334 17.5169 33.4698 17.9137C33.2061 18.3105 32.8325 18.6191 32.3961 18.8007C31.9596 18.9822 31.4801 19.0284 31.0177 18.9337C30.5554 18.839 30.1311 18.6077 29.7983 18.2685C29.4656 17.9293 29.2393 17.4981 29.1481 17.0286C29.0569 16.5591 29.1048 16.0717 29.2858 15.6298C29.4668 15.188 29.7728 14.8108 30.1651 14.5452C30.5574 14.2796 31.0185 14.1387 31.4902 14.1387C31.8047 14.1384 32.1163 14.2011 32.4068 14.3235C32.6972 14.4458 32.961 14.6239 33.1829 14.8501C33.4048 15.0762 33.5803 15.3457 33.6995 15.6409C33.8187 15.9362 33.8792 16.2531 33.8775 16.5722Z" fill="#212121"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1291_11711">
+                                            <rect width="36" height="18" fill="white" transform="translate(0 0.993164)"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p><strong>miễn phí giao hàng</strong> <br> cho đơn hàng trên 500k</p>
+                            </div>
+                            <div class="endow-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+                                    <path d="M21 5.96347V5.47313C21 1.73984 20.1639 0.993164 16.0574 0.993164H4.94261C0.836052 0.993164 0 1.73983 0 5.46197C0.780448 5.59426 1.48533 5.96964 1.99274 6.52316C2.50014 7.07668 2.77816 7.77352 2.77868 8.49318C2.77792 9.21155 2.49954 9.907 1.99193 10.4587C1.48432 11.0104 0.779544 11.3835 0 11.5132C0 15.2354 0.836052 15.9932 4.94261 15.9932H16.0574C19.9672 15.9932 20.9139 15.3022 20.9877 12.0147C20.2105 11.8825 19.5087 11.5083 19.0036 10.9569C18.4985 10.4054 18.2218 9.7114 18.2213 8.99468C18.2218 8.27502 18.4998 7.57814 19.0072 7.02463C19.5147 6.47111 20.2195 6.09576 21 5.96347ZM6.31967 6.04145C6.36605 5.93854 6.4327 5.84413 6.51638 5.76285C6.60158 5.68722 6.70168 5.62677 6.81147 5.58457C6.98115 5.52618 7.16547 5.51192 7.34362 5.54342C7.52176 5.57493 7.68664 5.65092 7.81965 5.76285C7.90336 5.84411 7.97003 5.93852 8.01638 6.04145C8.06551 6.14335 8.09064 6.25344 8.09015 6.36464C8.08533 6.58539 7.98872 6.79634 7.81965 6.95528C7.64254 7.10464 7.40993 7.1882 7.16802 7.18933C7.04675 7.1871 6.92656 7.16829 6.81147 7.13359C6.70417 7.08731 6.60478 7.02726 6.51638 6.95528C6.34529 6.79754 6.24834 6.58583 6.24588 6.36464C6.2454 6.25344 6.27054 6.14335 6.31967 6.04145ZM14.6926 11.7138C14.6416 11.8138 14.5708 11.9045 14.4836 11.9813C14.3981 12.059 14.2965 12.1206 14.1847 12.1627C14.0729 12.2048 13.953 12.2264 13.832 12.2265C13.5879 12.2242 13.3543 12.1364 13.1803 11.9813C13.0937 11.9044 13.025 11.8125 12.9786 11.711C12.9321 11.6095 12.9087 11.5005 12.9098 11.3907C12.9099 11.2809 12.9338 11.1723 12.9802 11.0709C13.0266 10.9696 13.0946 10.8775 13.1803 10.8C13.2679 10.7218 13.3726 10.661 13.4877 10.6217C13.655 10.5611 13.838 10.5457 14.0147 10.5774C14.1915 10.609 14.3543 10.6863 14.4836 10.8C14.5693 10.8775 14.6373 10.9696 14.6837 11.0709C14.7301 11.1723 14.7541 11.2809 14.7541 11.3907C14.7527 11.5007 14.7319 11.6097 14.6926 11.7138ZM14.6803 5.80744L7.19261 12.5942C7.13704 12.647 7.07025 12.6889 6.9963 12.7177C6.92234 12.7464 6.84276 12.7613 6.76229 12.7614C6.68001 12.7613 6.59853 12.7465 6.52257 12.7178C6.44661 12.6891 6.37766 12.6471 6.31967 12.5942C6.2071 12.4878 6.14426 12.346 6.14426 12.1986C6.14426 12.0512 6.2071 11.9094 6.31967 11.803L13.8074 5.02737C13.8645 4.97514 13.9325 4.93367 14.0074 4.90538C14.0823 4.87709 14.1627 4.86253 14.2438 4.86253C14.325 4.86253 14.4054 4.87709 14.4803 4.90538C14.5552 4.93367 14.6232 4.97514 14.6803 5.02737C14.793 5.13153 14.856 5.27153 14.856 5.41739C14.856 5.56324 14.793 5.70328 14.6803 5.80744Z" fill="#212121"></path>
+                                </svg>
+                                <p><strong>Ưu đãi 10%</strong> <br> cho đơn hàng đầu tiên</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 col">
+                        <div class="product-gallery-item">
+                            <img src="{{url_for('home.static_theme', filename='img/1569618582000635907_polomanor_ao_polo_basic_vee_xanh2.jpeg')}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 col">
+                        <div class="product-gallery-item">
+                            <img src="{{url_for('home.static_theme', filename='img/1569618582000635907_polomanor_ao_polo_basic_vee_xanh2.jpeg')}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 col">
+                        <div class="product-gallery-item">
+                            <img src="{{url_for('home.static_theme', filename='img/1569618582000635907_polomanor_ao_polo_basic_vee_xanh2.jpeg')}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 col">
+                        <div class="product-gallery-item">
+                            <img src="{{url_for('home.static_theme', filename='img/1569618582000635907_polomanor_ao_polo_basic_vee_xanh2.jpeg')}}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="des-overview">
+                    <div class="title-des">
+                        Chi tiết sản phẩm
+                    </div>
+                    <div class="content-des">
+                        <div class="collapse" id="read-more-des">
+                            <div class="card card-body">
+                                <figure>
+                                    <img src="{{url_for('home.static_theme', filename='img/1569898798149275654.jpeg')}}" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="{{url_for('home.static_theme', filename='img/1569898798149275654.jpeg')}}" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="{{url_for('home.static_theme', filename='img/1569898798149275654.jpeg')}}" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="{{url_for('home.static_theme', filename='img/1569898798149275654.jpeg')}}" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="{{url_for('home.static_theme', filename='img/1569898798149275654.jpeg')}}" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="bg-op">
+                            <a class="read-more-click" data-bs-toggle="collapse" href="#read-more-des" role="button" aria-expanded="false" aria-controls="read-more-des">
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 sticky-md-top col-right">
+                <div class="new">New</div>
+                <div class="descriptions-name-price-product">
+                    <div class="product-name">Áo Polo Nam Basic Vee Chất Vải Cosi Màu Xanh Nhạt Form Regular Fit</div>
+                    <div class="product-price">320.000 đ</div>
+                </div>
+                <div class="rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    36 đánh giá | 8 lượt mua
+                </div>
+                <div class="color-product">Color <span>XANH NHẠT</span>
+                    <div class="img-color">
+                        <input type="image" src="{{url_for('home.static_theme', filename='img/den_1473131143975931904.png')}}" alt="Submit" value="color-1" class="color">
+                        <input type="image" src="{{url_for('home.static_theme', filename='img/den_1473131143975931904.png')}}" alt="Submit" value="color-2" class="color">
+                    </div>
+                </div>
+                <div class="size-product">
+                    <div class="size-col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sizeRadio" id="size-1" checked>
+                            <label class="form-check-label" for="size-1">
+                                M
+                            </label>
+                        </div>
+                        <div class="form-check out-of-stock">
+                            <input class="form-check-input" type="radio" name="sizeRadio" id="size-2">
+                            <label class="form-check-label" for="size-2">
+                                L
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sizeRadio" id="size-3">
+                            <label class="form-check-label" for="size-3">
+                                XL
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sizeRadio" id="size-4">
+                            <label class="form-check-label" for="size-4">
+                                XXL
+                            </label>
+                        </div>
+                    </div>
+                    <a class="option-size-product" data-bs-toggle="collapse" href="#collapseSize" role="button" aria-expanded="false" aria-controls="collapseSize">
+                        Tư vấn chọn size <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="collapse show" id="collapseSize">
+                        <div class="card card-body">
+                            <div class="title-size"><span>Chiều cao</span>
+                                <span id="valueheight">160cm</span></div>
+                            <input type="range" min="155" max="188" value="171" id="heightRange" oninput="checkSize();" class="size-desc">
+                            <div class="title-size">
+                                <span>Cân nặng</span>
+                                <span id="valueweight">60kg</span>
+                            </div>
+                            <input type="range" min="50" max="88" value="69" id="weightRange" oninput="checkSize();" class="size-desc">
+                            <div class="row">
+                                <div class="col-md-9 col-9">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-7 w-3 col-6">POLOMANOR gợi ý</div>
+                                        <div class="col-md-4 col-4">
+                                            <input type="text" name="" readonly id="resultSize">
+                                            <span id="abc"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-3 modal-size">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#modalSize">Bảng size</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="voucher-product"></div>
+                <div class="voucher-slide" data-bs-toggle="modal" data-bs-target="#modalVoucher">
+                    <div class="title-voucher">
+                        <span>Voucher của shop</span>
+                        <span>Xem tất cả <i class="fas fa-chevron-right"></i></span>
+                    </div>
+                    <div id="carouselVoucher" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="content-slide-voucher">
+                                    <div class="voucher-code">
+                                        SALE 10%
+                                    </div>
+                                    <div class="voucher-desc"><img src="{{url_for('home.static_theme', filename='img/1551772661225361408.svg')}}" alt="">POLOMΛN NEW VERSION</div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="content-slide-voucher">
+                                    <div class="voucher-code">
+                                        NEW
+                                    </div>
+                                    <div class="voucher-desc"><img src="{{url_for('home.static_theme', filename='img/1550339413995687936.svg')}}" alt="">Miễn phí vận chuyển đơn từ 500K</div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselVoucher" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselVoucher" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="add-cart">
+                    <button class="heart like-click"><i class="far fa-heart"></i></button>
+                    <button class="add">Thêm vào giỏ hàng</button>
+                </div>
+                {% block bottom %}
+                {% endblock %}
+                <div class="info-policy">
+                    <a data-bs-toggle="collapse" href="#collapse-1" role="button" aria-expanded="false" aria-controls="collapse-1">
+                        CHÍNH SÁCH VẬN CHUYỂN <i class="fas fa-plus"></i>
+                    </a>
+                    <div class="collapse" id="collapse-1">
+                        <div class="card card-body">
+                            QUY ĐỊNH VỀ MỨC PHÍ GIAO HÀNG <br>
+                            Phí đơn hàng được tính dựa theo khoảng cách giữa cửa hàng cung cấp với địa chỉ giao hàng cùng với trọng lượng của sản phẩm.
+                            Chi tiết mức phí giao hàng của từng đơn hàng sẽ được thể hiện rõ ngay tại trang hoàn tất đơn hàng sau khi Quý khách nhập địa chỉ giao hàng .<br>
+                            Mọi thắc mắc về chính sách giao hàng, Quý khách vui lòng liên hệ
+                            Hotline: 087.774.7777 (1,000đ/phút) <br>
+                            Fanpage: Polomanor <br>
+                            Email: cskh@polomanor.vn <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-policy">
+                    <a data-bs-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse-2">
+                        ĐỔI TRẢ VÀ BẢO HÀNH <i class="fas fa-plus"></i>
+                    </a>
+                    <div class="collapse" id="collapse-2">
+                        <div class="card card-body">
+                            QUY ĐỊNH VỀ MỨC PHÍ GIAO HÀNG <br>
+                            Phí đơn hàng được tính dựa theo khoảng cách giữa cửa hàng cung cấp với địa chỉ giao hàng cùng với trọng lượng của sản phẩm.
+                            Chi tiết mức phí giao hàng của từng đơn hàng sẽ được thể hiện rõ ngay tại trang hoàn tất đơn hàng sau khi Quý khách nhập địa chỉ giao hàng .<br>
+                            Mọi thắc mắc về chính sách giao hàng, Quý khách vui lòng liên hệ
+                            Hotline: 087.774.7777 (1,000đ/phút) <br>
+                            Fanpage: Polomanor <br>
+                            Email: cskh@polomanor.vn <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review-comments">
+            <h4 class="heading">ĐÁNH GIÁ</h4>
+            <div class="feedback-overview">
+                <div class="feedback-total">
+                    <h1 class="total-score">4.9</h1>
+                    <div class="total-rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="total-review">Đánh giá (50)</p>
+                </div>
+                <div class="feedback-detail">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p>Chật</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <p>0.0%</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p>Rộng</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <p>0.0%</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p>Vừa</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <p>100%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comments-block">
+                <div class="title-col-name-tab">
+                    <span>Sắp xếp theo: </span>
+                    <ul class="nav nav-tabs" id="commentsTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="home" aria-selected="true">ALL</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#coments-text" type="button" role="tab" aria-controls="profile" aria-selected="false">Bình luận bằng chữ</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#coments-img" type="button" role="tab" aria-controls="contact" aria-selected="false">Bình luận bằng hình</button>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-dark">Gửi đánh giá của bạn</button>
+                </div>
+                <div class="tab-content" id="commentsTabContent">
+                    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="home-tab">
+                        <ul class="feedback-comments">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-1 col-2">
+                                        <div class="img-customer"><img src="{{url_for('home.static_theme', filename='img/811d0205648f957254fa73715a999d16.jpg')}}" alt=""></div>
+                                    </div>
+                                    <div class="col-md-9 col-6">
+                                        <p>dannguyennnnnnnnn</p>
+                                        <div class="date">24/09/2022 lúc 00:15</div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-4 col-4">
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="comments-desc">
+                                    Mua 4 cái áo vải oke nhưng thiếu màu à như kiểu áo cũ vậy
+                                </p>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-1 col-2">
+                                        <div class="img-customer"><img src="{{url_for('home.static_theme', filename='img/811d0205648f957254fa73715a999d16.jpg')}}" alt=""></div>
+                                    </div>
+                                    <div class="col-md-9 col-6">
+                                        <p>dannguyennnnnnnnn</p>
+                                        <div class="date">24/09/2022 lúc 00:15</div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-4">
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments-desc">
+                                    <p>Chất liệu:Hong bt vải j mà hịn lắmmm🥳 Màu sắc:be Đúng với mô tả:đúng Omg xịn lắm. From đẹp, đóng gói chỉnh chụuuuuuu💕 tư vấn nhiệt tình reppp nhanh lắm ahh. ( minh hoạ hoy nhaaa)</p>
+                                    <div class="row img-comments">
+                                        <div class="col-md-2 col-sm-6 col-12"><img src="{{url_for('home.static_theme', filename='img/811d0205648f957254fa73715a999d16.jpg')}}" alt=""></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <button type="button" class="btn btn-dark see-more-reviews">Xem thêm đánh giá</button>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="coments-text" role="tabpanel" aria-labelledby="profile-tab">
+                        <ul class="feedback-comments">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-1 col-2">
+                                        <div class="img-customer"><img src="{{url_for('home.static_theme', filename='img/811d0205648f957254fa73715a999d16.jpg')}}" alt=""></div>
+                                    </div>
+                                    <div class="col-md-9 col-6">
+                                        <p>dannguyennnnnnnnn</p>
+                                        <div class="date">24/09/2022 lúc 00:15</div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-4">
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="comments-desc">
+                                    Mua 4 cái áo vải oke nhưng thiếu màu à như kiểu áo cũ vậy
+                                </p>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-1 col-2">
+                                        <div class="img-customer"><img src="{{url_for('home.static_theme', filename='img/811d0205648f957254fa73715a999d16.jpg')}}" alt=""></div>
+                                    </div>
+                                    <div class="col-md-9 col-6">
+                                        <p>dannguyennnnnnnnn</p>
+                                        <div class="date">24/09/2022 lúc 00:15</div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-4">
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments-desc">
+                                    <p>Chất liệu:Hong bt vải j mà hịn lắmmm🥳 Màu sắc:be Đúng với mô tả:đúng Omg xịn lắm. From đẹp, đóng gói chỉnh chụuuuuuu💕 tư vấn nhiệt tình reppp nhanh lắm ahh. ( minh hoạ hoy nhaaa)</p>
+                                    <div class="row img-comments">
+                                        <div class="col-md-2 col-sm-6"><img src="{{url_for('home.static_theme', filename='img/811d0205648f957254fa73715a999d16.jpg')}}" alt=""></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="coments-img" role="tabpanel" aria-labelledby="contact-tab">
+                        <ul class="feedback-comments">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-1 col-2">
+                                        <div class="img-customer"><img src="{{url_for('home.static_theme', filename='img/811d0205648f957254fa73715a999d16.jpg')}}" alt=""></div>
+                                    </div>
+                                    <div class="col-md-9 col-6">
+                                        <p>dannguyennnnnnnnn</p>
+                                        <div class="date">24/09/2022 lúc 00:15</div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-4">
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments-desc">
+                                    <p>Chất liệu:Hong bt vải j mà hịn lắmmm🥳 Màu sắc:be Đúng với mô tả:đúng Omg xịn lắm. From đẹp, đóng gói chỉnh chụuuuuuu💕 tư vấn nhiệt tình reppp nhanh lắm ahh. ( minh hoạ hoy nhaaa)</p>
+                                    <div class="row img-comments">
+                                        <div class="col-md-2 col-sm-6"><img src="{{url_for('home.static_theme', filename='img/811d0205648f957254fa73715a999d16.jpg')}}" alt=""></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav aria-label="Page navigation example" class="nav-pagination">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <i class="fas fa-angle-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="">1</a></li>
+                        <li class="page-item"><a class="page-link" href="">2</a></li>
+                        <li class="page-item"><a class="page-link" href="">3</a></li>
+                        <li class="page-item"><a class="page-link" href="">4</a></li>
+                        <li class="page-item"><a class="page-link" href="">5</a></li>
+                        <li class="page-item"><a class="page-link" href="">...</a></li>
+                        <li class="page-item"><a class="page-link" href="">10</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <i class="fas fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section class="products-viewed">
+        <h4 class="heading">SẢN PHẨM ĐÃ XEM</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a> <a href="" class="icon-heart"> <i class="fa-regular fa-heart"></i> <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> --> </a> <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a> </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div> <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a> <a href="" class="icon-heart"> <i class="fa-regular fa-heart"></i> <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> --> </a> <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a> </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div> <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a> <a href="" class="icon-heart"> <i class="fa-regular fa-heart"></i> <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> --> </a> <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a> </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div> <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a> <a href="" class="icon-heart"> <i class="fa-regular fa-heart"></i> <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> --> </a> <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a> </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div> <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a> <a href="" class="icon-heart"> <i class="fa-regular fa-heart"></i> <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> --> </a> <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a> </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div> <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="related-products">
+        <h4 class="heading">CÓ THỂ BẠN SẼ THÍCH</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a> <a href="" class="icon-heart"> <i class="fa-regular fa-heart"></i> <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> --> </a> <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a> </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div> <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a> <a href="" class="icon-heart"> <i class="fa-regular fa-heart"></i> <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> --> </a> <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a> </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div> <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a> <a href="" class="icon-heart"> <i class="fa-regular fa-heart"></i> <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> --> </a> <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a> </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div> <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a> <a href="" class="icon-heart"> <i class="fa-regular fa-heart"></i> <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> --> </a> <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a> </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div> <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a> <a href="" class="icon-heart"> <i class="fa-regular fa-heart"></i> <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> --> </a> <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a> </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div> <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a> <a href="" class="icon-heart"> <i class="fa-regular fa-heart"></i> <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> --> </a> <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a> </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div> <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a> <a href="" class="icon-heart"> <i class="fa-regular fa-heart"></i> <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> --> </a> <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a> </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div> <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a> <a href="" class="icon-heart"> <i class="fa-regular fa-heart"></i> <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> --> </a> <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a> </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div> <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="see-more"> <a href="" class="btn-see-more"> Xem thêm (7) </a> </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% endif %}

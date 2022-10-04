@@ -1,0 +1,777 @@
+{% if plugin.is_building %}
+{% include "sites/index.html" %}
+{% else %}
+{% extends "sites/theme_fhh_computer/vi/common/layout.html" %}
+{%block meta_seo%}
+{% include "fhh-framework/seo/include/home.html" %}
+{%endblock%}
+{% block content %}
+<section class="product_content">
+    <section class="banner-product">
+        <img src="{{url_for('home.static_theme', filename='img/1551146486102757376.jpeg')}}" alt="">
+    </section>
+    <section class="voucher-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-6">
+                    <div class="voucher-title">G10</div>
+                    <div class="voucher-desc">Giá dùng thử <br>
+                        giảm 10% đơn đầu tiên</div>
+                </div>
+                <div class="col-md-6 col-6">
+                    <div class="voucher-title">NEW</div>
+                    <div class="voucher-desc">Free Ship
+                        <br> đơn hàng từ 500K </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-block product-basic">
+        <div class="bg-content" style="background-image: url(/assets/img/polo-basic1551519143851724800.jpeg);">
+        </div>
+        <div class="title">
+            <h1>Hàng mới</h1>
+            <p>Thiết kế trơn tinh giản nhưng không kém phần thanh lịch, luôn được xem là mẫu áo <br> must-have của phái mạnh. </p>
+        </div>
+        <div class="content-block content-new-product">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="see-more">
+                        <a href="" class="btn-see-more">
+                            Xem thêm (7)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-block product-basic">
+        <div class="bg-content" style="background-image: url(/assets/img/polo-phoi1551519104584650752.jpeg);">
+        </div>
+        <div class="title">
+            <h1>Polo Phối</h1>
+            <p>Tạo nên những điểm nhấn khác biệt và sự mới mẻ cho người mặc bằng các mảng họa <br> tiết phối tinh tế.</p>
+        </div>
+        <div class="content-block content-product-style">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product">
+                            <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <div class="comming-soon"></div>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="see-more">
+                        <a href="" class="btn-see-more">
+                            Xem thêm (1)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-block product-basic">
+        <div class="bg-content" style="background-image: url(/assets/img/polo-hoa-tiet1551514331164708864.jpeg);">
+        </div>
+        <div class="title">
+            <h1>Polo Họa tiết</h1>
+            <p>Nổi bật với các họa tiết độc đáo được lựa chọn tỉ mỉ, không quá cầu kỳ nhưng vẫn đủ <br> gây ấn tượng mỗi khi khoác lên mình.</p>
+        </div>
+        <div class="content-block content-product-style">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product">
+                            <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <div class="comming-soon"></div>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="see-more">
+                        <a href="" class="btn-see-more">
+                            Xem thêm (1)
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-block product-basic">
+        <div class="bg-content" style="background-image: url(/assets/img/ao-thun1551514835487821824.jpeg);">
+        </div>
+        <div class="title">
+            <h1>Áo thun</h1>
+            <p>Thiết kế áo đề cao sự thoải mái và trẻ trung, kết hợp với gam màu trendy tạo sự đa <br> dạng trong việc lựa chọn.</p>
+        </div>
+        <div class="content-block content-product-style">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                            <a href="" class="icon-heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <!-- click -->
+                                <!-- <i class="fa-solid fa-heart"></i> -->
+                            </a>
+                            <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                        </div>
+                        <div class="descriptions-product">
+                            <div class="new">New</div>
+                            <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                            <div class="product-price">320.000đ</div>
+                            <div class="product-color">
+                                <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="see-more">
+                        <a href="" class="btn-see-more">
+                            Xem thêm (1)
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="all-product">
+        <div class="container">
+            <div class="title">
+                <h1>tất cả sản phẩm</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                        <a href="" class="icon-heart">
+                            <i class="fa-regular fa-heart"></i>
+                            <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> -->
+                        </a>
+                        <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                    </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div>
+                        <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                        <a href="" class="icon-heart">
+                            <i class="fa-regular fa-heart"></i>
+                            <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> -->
+                        </a>
+                        <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                    </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div>
+                        <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                        <a href="" class="icon-heart">
+                            <i class="fa-regular fa-heart"></i>
+                            <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> -->
+                        </a>
+                        <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                    </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div>
+                        <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                        <a href="" class="icon-heart">
+                            <i class="fa-regular fa-heart"></i>
+                            <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> -->
+                        </a>
+                        <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                    </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div>
+                        <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                        <a href="" class="icon-heart">
+                            <i class="fa-regular fa-heart"></i>
+                            <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> -->
+                        </a>
+                        <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                    </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div>
+                        <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                        <a href="" class="icon-heart">
+                            <i class="fa-regular fa-heart"></i>
+                            <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> -->
+                        </a>
+                        <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                    </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div>
+                        <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product"> <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                        <a href="" class="icon-heart">
+                            <i class="fa-regular fa-heart"></i>
+                            <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> -->
+                        </a>
+                        <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                    </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div>
+                        <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="img-product">
+                        <a href=""> <img src="/assets/img/1552489855080992768_polomanor_ao-polo_xanh_model-2.jpeg" alt="" class="main-img"> </a>
+                        <div class="comming-soon"></div>
+                        <a href="" class="icon-heart">
+                            <i class="fa-regular fa-heart"></i>
+                            <!-- click -->
+                            <!-- <i class="fa-solid fa-heart"></i> -->
+                        </a>
+                        <a href="" class="icon-cart-product"> <img src="/assets/img/cart.svg" alt=""></a>
+                    </div>
+                    <div class="descriptions-product">
+                        <div class="new">New</div>
+                        <a href="" class="product-name">Áo Polo Nam Basic Chất Vải CMC Màu Nâu Form Regular Fit</a>
+                        <div class="product-price">320.000đ</div>
+                        <div class="product-color">
+                            <div class="color-item" style="background-image: url(/assets/img/den_1473131143975931904.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="see-more">
+                        <a href="" class="btn-see-more">
+                            Xem thêm (1)
+                        </a>
+                    </div> -->
+            </div>
+        </div>
+    </section>
+</section>
+{% endblock %}
+{% endif %}

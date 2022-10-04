@@ -1,0 +1,12 @@
+{% if plugin.is_building %}
+{% include "sites/index.html" %}
+{% else %}
+{% extends "sites/theme_fhh_computer/vi/common/layout.html" %}
+{%block meta_seo%}
+{% include "fhh-framework/seo/include/home.html" %}
+{%endblock%}
+{% block content %}
+{# {% include plugin.return_theme() +"/vi/home/index_render.html" %} #}
+{{ plugin.get_html() | safe}}
+{% endblock %}
+{% endif %}

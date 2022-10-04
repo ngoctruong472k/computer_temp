@@ -1,0 +1,12 @@
+{% if plugin.is_building %}
+{% include "sites/index.html" %}
+{% else %}
+{% extends "sites/theme_fhh_computer/vi/common/layout.html" %}
+{%block meta_seo%}
+{% include "fhh-framework/seo/include/home.html" %}
+{%endblock%}
+{% block content %}
+<section class=" search_page">
+</section>
+{% endblock %}
+{% endif %}

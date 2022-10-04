@@ -1,0 +1,70 @@
+{% extends "sites/theme_fhh_tmdt_5/vi/brand/index.html" %}
+{%block meta_seo %}
+<meta name="robots" content="index,dofollow" />
+{% import "fhh-framework/seo/article.html" as seo %}
+{% set tit = brand.name %}
+{% if brand.meta_title is not none %}
+  {% set tit = brand.meta_title %}
+  {%endif%}
+  {% set description = brand.description %}
+  {% set image = plugin.get_logo() %}
+  {% if brand.image %}
+    {% set image = brand.image_original_url %}
+  {% endif %}
+  {%set data={'title': tit, 'description': description, 'image': image, 'facebookAppId': plugin.facebookAppId} %}
+  {{seo.seoarticle(data=data)}}
+{% endblock %}
+{% block content%}
+  {% import 'fhh-framework/product/mobile-op/product.html' as process%}
+  <section class="title-page-wrap">
+    <div class="row">
+      <a href="{{url_for('home.index')}}">Trang chủ</a><span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+      <a class="active-title" href="{{url_for('site_brand.detail', link = brand.link)}}">{{brand.name}}</a><span></span>
+    </div>
+    <div class="row" style="padding-bottom: 20px;padding-top: 20px;">
+      <div class="columns">
+        <a class="color brand popular-brands"><i class="fa fa-anchor"> </i> DANH SÁCH CÁC THƯƠNG HIỆU NỔI TIẾNG</a>
+        <hr class="bcolor">
+      </div>
+      <div class="large-12 medium-12 small-12 columns ">
+        <div class="item-right">
+          <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-6">
+            {% for b in brands%}
+              <li class="box-div wow fadeInDown" data-wow-duration="1s" style="text-align: center;">
+                <a href="{{url_for('site_brand.detail', link=b.link)}}"><div class="box-image">
+                  {%if b.image%}
+                  <img src="{{b.image_url}}">
+                  {%endif%}
+                </div>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row" >
+    <div class="large-12 medium-12 small-12 columns">
+      <section class="deal-wrap row">
+        <div class="columns deal-title">
+          <div class="left" >
+            <h3 class=""><a href="#"><i class="fa fa-fire" aria-hidden="true"></i> Các sản phẩm của {{brand.name}}</a></h3>
+          </div>
+        </div>
+        <div class="columns">
+          <ul class="large-block-grid-5 medium-block-grid-2 small-block-grid-1"  id="list_products">
+            
+            {% for item in products %}
+              {{process.product(data={'item' : item})}}
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="load-more">
+          <a class="btn button alert btn_load_more" data-url={{request.url}} data-page="2">Xem nhiều hơn</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+<!-- 1 Node -->
+{% endblock %}

@@ -1,0 +1,259 @@
+:root {
+    --black: #000;
+    --green: #2cc067;
+    --red: #d82a29;
+    --blue: #0074da;
+    --yellow: #fdd835;
+    --bg-gray: #f1f1f1;
+    --black-op: #666;
+    --black-dark: #202c43;
+    --blue-dark: #243a76;
+    --white: #fff;
+    --bg-body: #f4f4f4;
+    --green-light: #d0ecdd;
+}
+
+.header_top {
+    justify-content: space-between;
+}
+
+header .header_top,
+header .header_top-left,
+header .header_top-right {
+    display: flex;
+    align-items: center;
+}
+
+header p {
+    margin: 0;
+}
+
+.hotline,
+.mega-hotline {
+    position: relative;
+    padding: 5px 0;
+    z-index: 2;
+}
+
+.hotline .title,
+.mega-hotline .title {
+    font-size: 13px;
+    margin-left: 15px;
+    padding: 5px 10px;
+    background: repeating-linear-gradient(to right, red 0, #00f 50%, red 100%);
+    color: var(--white);
+    border-radius: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    background-size: 200% auto;
+    animation: 2s linear infinite forwards gradient;
+}
+
+.hotline:hover .sub {
+    display: block;
+}
+
+.hotline .sub {
+    width: max-content;
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: var(--white);
+    border: 1px solid #ccc;
+    box-shadow: rgb(0 0 0 / 18%) 0 6px 12px 0;
+}
+
+.mega-hotline .mega-sub {
+    position: fixed;
+    top: 40px;
+    width: 1200px;
+    margin: 0 auto;
+    display: none;
+    left: 50%;
+    background: #fff;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.hotline .sub .item {
+    padding: 10px;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 13px;
+}
+
+.hotline .sub .item span {
+    background: var(--blue-dark);
+    border-radius: 50%;
+    color: var(--white);
+    padding: 2px 8px;
+    margin-right: 5px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: -200% 0
+    }
+}
+
+.header_top-left p {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 5px 0;
+}
+
+.header_top-left p a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.hotline i,
+.mega-hotline i,
+.top_header-item i {
+    padding-right: 3px;
+}
+
+.header-wrapper {
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #ccc;
+    background: var(--white);
+}
+
+.top_header-item {
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.top_header-item:hover {
+    color: var(--black);
+}
+
+.tab-hotline {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    border-radius: 5px;
+    background: var(--white);
+}
+
+.tab-hotline .title-tab.hovered {
+    background: var(--red);
+    color: var(--white);
+}
+
+
+
+.tab-hotline .title-tab {
+    width: 33.33%;
+    text-align: center;
+    background: var(--bg-gray);
+    border-radius: 20px;
+    color: var(--black);
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.work-time {
+    border: 2px solid var(--red);
+    padding: 5px 10px;
+    font-size: 18px;
+    width: fit-content;
+    border-radius: 20px;
+    font-weight: 600;
+    margin: 10px auto 25px;
+}
+
+.tab-content-items {
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    display: none;
+}
+
+.tab-content-items.actice {
+    display: block;
+}
+
+.tab-content-items .row.tab {
+    flex-direction: row-reverse;
+}
+
+.tab-content-items .title-col {
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.tab-content-items .row.tab .col-md-4 .item-contact a,
+.tab-content-items .row.tab .col-md-4 .item-contact {
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.9;
+}
+
+.tab-content-items .row.tab .col-md-4 {
+    padding-bottom: 15px;
+}
+
+.tab-content-items .row.tab .col-md-4 .item-contact a:last-child {
+    color: var(--red);
+}
+
+.content-item-block {
+    padding-bottom: 15px;
+}
+
+.header_top-left .hotline-address p {
+    font-weight: 500;
+    color: var(--black);
+    font-size: 14px;
+}
+
+.header_top-left .hotline-address {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.op {
+    display: none;Minh Quang Hồng
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    background: #fff;
+}
+
+.op.active {
+    display: block;
+    animation: 1s linear slowHotline;
+}
+
+@keyframes slowHotline {
+    0% {
+        background: #fff;
+    }
+
+    100% {
+        background: rgb(120, 120, 120);
+    }
+}

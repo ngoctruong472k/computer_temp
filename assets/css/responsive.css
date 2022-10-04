@@ -1,0 +1,19 @@
+@media (min-width: 1650px) {
+
+    .container {
+        max-width: 1650px;
+    }
+
+    .mega-hotline .mega-sub {
+        width: 1650px;
+    }
+
+}
+
+@media (min-width: 1366px) {}
+
+@media (max-width: 1366px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 420px) {}
