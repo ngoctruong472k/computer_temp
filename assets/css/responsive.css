@@ -10,10 +10,155 @@
 
 }
 
-@media (min-width: 1366px) {}
+@media (max-width: 1170px) {
+    .container {
+        max-width: 100%;
+    }
 
-@media (max-width: 1366px) {}
+    .mega-hotline .mega-sub {
+        width: 100%;
+    }
 
-@media (max-width: 768px) {}
+    .hotline .title,
+    .mega-hotline .title {
+        font-size: 13px;
+        margin-left: 10px;
+        padding: 5px 7px;
+    }
 
-@media (max-width: 420px) {}
+    .header_bottom .header_bottom-right {
+        width: 35%;
+    }
+
+    .header_bottom .search-input {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .c-top {
+        max-width: 100%;
+    }
+
+    header .header_top {
+        display: none;
+    }
+
+    .header_bottom .img-logo {
+        width: 11%;
+    }
+
+    .header_bottom .img-logo img {
+        width: 100%;
+    }
+
+    .header_bottom .search-input button {
+        padding: 4px 20px;
+    }
+
+    .header_bottom .search-input input {
+        width: 90%;
+        padding: 6px 20px;
+        font-size: 13px;
+
+    }
+
+    .header_bottom .search-input button i {
+        font-size: 20px;
+    }
+
+    .header_bottom .search-input {
+        width: 46%;
+    }
+
+    .header_bottom .header_bottom-right {
+        width: 41%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_mobile {
+        display: block;
+    }
+
+    header {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .header_mobile {
+        padding: 10px 0;
+    }
+
+    .header_mobile .col-2 img {
+        width: 30px;
+        padding-right: 10px;
+    }
+
+    .header-right a {
+        position: relative;
+    }
+
+    .header_mobile .header-left {
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .header_mobile .row {
+        align-items: center;
+    }
+
+    .qty {
+        position: absolute;
+        top: -8px;
+        right: 0;
+        background: var(--yellow);
+        font-size: 12px;
+        color: #000;
+    }
+
+    .header_mobile .col-8 .logo {
+        width: 120px;
+    }
+
+    .header_mobile .col-8 {
+        text-align: center;
+    }
+
+    .header_mobile .header-right {
+        text-align: right;
+    }
+
+    .header-left span i {
+        font-size: 18px;
+    }
+
+    .header_mobile .col-12 {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .header_mobile .col-12 input {
+        width: 100%;
+        outline: 0;
+        margin: 12px 0;
+        font-size: 13px;
+        padding: 8px;
+        border: 1px solid #ccc;
+    }
+
+    .header_mobile .col-12 button {
+        position: fixed;
+        right: 10px;
+    }
+
+    .menu_mobile {
+        display: block;
+
+    }
+
+    
+}

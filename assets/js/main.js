@@ -3,12 +3,19 @@ $(".search-icon").on('click', function(e) {
     e.preventDefault();
     $(".main").toggleClass('active');
 });
-
+$(".header-left").on('click', function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('active');
+});
+$(".list-product-menu li>i").on('click', function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('active');
+});
 
 $(".mega-hotline").on({
     mouseenter: function() {
         $(this).find('.mega-sub').css("display", "block");
-         $(".op").addClass('active');
+        $(".op").addClass('active');
     },
     mouseleave: function() {
         $(this).find('.mega-sub').css("display", "none");
