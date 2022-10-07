@@ -15,11 +15,11 @@ $(".list-product-menu li>i").on('click', function(e) {
 $(".mega-hotline").on({
     mouseenter: function() {
         $(this).find('.mega-sub').css("display", "block");
-        $(".op").addClass('active');
+        $(".overlay").addClass('active');
     },
     mouseleave: function() {
         $(this).find('.mega-sub').css("display", "none");
-        $(".op").removeClass('active');
+        $(".overlay").removeClass('active');
     }
 });
 
@@ -69,43 +69,23 @@ function openTabSell(evt, cityName) {
 
 // slick carousel
 
-$('.row-assured').slick({
-    slidesToShow: 3,
+$('.slide-top').slick({
+    slidesToShow: 1,
+    autoplay: true,
+    infinite: true,
     slidesToScroll: 1,
     dots: false,
     draggable: true,
-    responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-            }
-        }
-    ],
 
 });
 
-$('.row-slide').slick({
-    slidesToShow: 4,
+$('.slide-product').slick({
+    slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
     dots: false,
+    autoplay: true,
     draggable: true,
-    responsive: [{
-        breakpoint: 1024,
-        settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-        }
-    }],
 });
 
 $('.vouchers-code').slick({
