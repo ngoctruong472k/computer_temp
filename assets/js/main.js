@@ -7,6 +7,10 @@ $(".header-left").on('click', function(e) {
     e.preventDefault();
     $(this).parent().toggleClass('active');
 });
+$(".btn-menu-bar").on('click', function(e) {
+    e.preventDefault();
+    $(".menu-bar").toggleClass('active');
+});
 $(".list-product-menu li>i").on('click', function(e) {
     e.preventDefault();
     $(this).parent().toggleClass('active');
@@ -22,6 +26,17 @@ $(".mega-hotline").on({
         $(".overlay").removeClass('active');
     }
 });
+
+// 
+$(window).scroll(function() {
+    if (this.scrollY > 85) {
+
+        $(".header_mobile").addClass('active');
+    } else {
+        $(".header_mobile").removeClass('active');
+    }
+});
+
 
 // bang khach hang ca nhan
 function openTabIndividual(evt, cityName) {
@@ -79,7 +94,7 @@ $('.slide-top').slick({
 
 });
 
-$('.slide-product').slick({
+$('.featured-cate .slide-product-featured').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
@@ -88,48 +103,72 @@ $('.slide-product').slick({
     draggable: true,
 });
 
-$('.vouchers-code').slick({
-    slidesToShow: 1,
+$('.products .slide-product').slick({
+    slidesToShow: 6,
     slidesToScroll: 1,
     infinite: true,
     dots: false,
-    draggable: true,
-    vertical: true,
-    autoplay: true,
-    verticalSwiping: true,
-    autoplaySpeed: 3500,
 
-});
-
-$('.slide-product-detail').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    vertical: true,
-    verticalSwiping: true,
-    infinite: true,
-    dots: true,
-    adaptiveHeight: true,
-    draggable: true,
+    autoplaySpeed: 4500,
     responsive: [{
-        breakpoint: 480,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            vertical: false,
-            horizontal: true,
-            verticalSwiping: false,
-            adaptiveHeight: false,
-            dots: false,
+            breakpoint: 1366,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
         }
-    }],
+    ],
 });
 
-$(".carousel-bs").swipe({
-    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-        if (direction == 'left') $(this).carousel('next');
-        if (direction == 'right') $(this).carousel('prev');
-    },
-    allowPageScroll: "vertical"
-});
+// $('.vouchers-code').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     infinite: true,
+//     dots: false,
+//     draggable: true,
+//     vertical: true,
+//     autoplay: true,
+//     verticalSwiping: true,
+//     autoplaySpeed: 3500,
+
+
+// });
+
+// $('.slide-product-detail').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 1500,
+//     vertical: true,
+//     verticalSwiping: true,
+//     infinite: true,
+//     dots: true,
+//     adaptiveHeight: true,
+//     draggable: true,
+//     responsive: [{
+//         breakpoint: 480,
+//         settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//             vertical: false,
+//             horizontal: true,
+//             verticalSwiping: false,
+//             adaptiveHeight: false,
+//             dots: false,
+//         }
+//     }],
+// });
