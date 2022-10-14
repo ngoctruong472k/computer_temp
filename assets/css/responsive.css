@@ -11,6 +11,28 @@
 }
 
 @media (max-width: 1170px) {
+    .list-unstyled ul {
+        padding-top: 0;
+    }
+
+    .filter-item ul li {
+        width: calc(100% - 5px);
+    }
+
+    .pagination.product {
+        width: 100%;
+        justify-content: flex-end !important;
+    }
+
+    .new-sort-zone nav {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .pagination.product .page-item .page-link {
+        font-size: 13px;
+    }
+
     .container {
         max-width: 100%;
     }
@@ -164,6 +186,94 @@
 }*/
 
 @media (max-width: 480px) {
+    .min-price {
+        color: var(--red);
+    }
+
+    .item-product {
+        padding: 30px 0 10px;
+        position: relative;
+    }
+
+    .sku {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        background: #fff;
+        color: var(--red);
+    }
+
+    .hot-product {
+        display: none;
+    }
+
+    .content_product-page .row.w-mb {
+        width: calc(100% + 24px);
+        margin-left: -12px;
+    }
+
+    .cate-product-list .row .col-md-3:nth-child(2n) {
+        border-right: 0;
+    }
+
+    .content.active {
+        margin-top: 120px;
+    }
+
+    .cate-prod-top {
+        background: #fff;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sort-zone-mb {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sort-zone-mb .dropdown {
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+    }
+
+    .sort-zone-mb .dropdown button {
+        color: #333;
+        width: 100%;
+        background-color: #dcdcdc;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        border: 0;
+    }
+
+    .sort-zone-mb .dropdown button::after {
+        position: absolute;
+        right: 10px;
+        color: #aba9a9;
+    }
+
+    .sort-zone-mb .dropdown button:focus {
+        box-shadow: none;
+    }
+
+    .sort-zone-mb .dropdown .dropdown-mega {
+        width: calc(100vw - 23px);
+        overflow: auto hidden;
+    }
+
+    .new-sort-zone,
+    .sort-zone,
+    .horizontal-price-filter,
+    .left-content-product {
+        display: none;
+    }
+
+    .right-content-product {
+        width: 100%;
+    }
+
     .right-slide .col-md-4 {
         display: none;
     }
@@ -185,6 +295,7 @@
 
     .header_mobile {
         display: block;
+
     }
 
     .content {
@@ -373,12 +484,13 @@
         margin: 0;
     }
 
-    .right-slide .row .col{
+    .right-slide .row .col {
         padding: 0;
         width: 100%;
     }
-    .content_home{
-    	overflow-x: hidden; 
+
+    .content_home {
+        overflow-x: hidden;
     }
 
 }

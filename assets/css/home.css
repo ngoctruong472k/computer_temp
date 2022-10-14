@@ -32,8 +32,9 @@ header p {
     display: none;
 
 }
-.header_mobile.active .col-8 .logo{
-	display: none;
+
+.header_mobile.active .col-8 .logo {
+    display: none;
 }
 
 .header_mobile.active {
@@ -42,19 +43,21 @@ header p {
     top: 0;
     padding-bottom: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 999;
     background: #fff;
 
 }
-.header_mobile.active .search-fix{
-	position: fixed;
-	width: calc(100% - 110px);
-	left: 50px;
-	top: 17px;
+
+.header_mobile.active .search-fix {
+    position: fixed;
+    width: calc(100% - 110px);
+    left: 50px;
+    top: 17px;
 }
-.header_mobile.active .search-fix input{
-	border: 0;
-	margin: 0;
+
+.header_mobile.active .search-fix input {
+    border: 0;
+    margin: 0;
 }
 
 .hotline,
@@ -347,9 +350,11 @@ header p {
     z-index: 1;
     background: #fff;
 }
-.header_mobile.active .row{
-	padding: 10px 0;
+
+.header_mobile.active .row {
+    padding: 10px 0;
 }
+
 .header_mobile .row.active .overlay {
     display: block;
     transition: .5s all linear;
@@ -494,6 +499,8 @@ header p {
     height: 100vh;
     transition: all .5s ease;
     z-index: 11;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .login {
@@ -1286,6 +1293,10 @@ footer {
     text-decoration: none;
 }
 
+.clearfix {
+    height: 10px;
+}
+
 .bottom-footer .container p {
     line-height: 2;
 }
@@ -1430,9 +1441,10 @@ footer {
     align-items: center;
     justify-content: center;
 }
-.service-block .service-item{
-	width: 25%;
-	padding: 0 5px;
+
+.service-block .service-item {
+    width: 25%;
+    padding: 0 5px;
 }
 
 .service-block .icon-service i {
@@ -1447,4 +1459,14 @@ footer {
 
 .service-block .service-desc {
     line-height: 1.2;
+}
+
+.hover-block {
+    display: none;
+    position: fixed;
+    width: fit-content;
+    min-height: 200px;
+    height: max-content;
+    z-index: 99999;
+    background: red;
 }

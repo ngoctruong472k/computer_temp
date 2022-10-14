@@ -15,6 +15,12 @@ $(".list-product-menu li>i").on('click', function(e) {
     e.preventDefault();
     $(this).parent().toggleClass('active');
 });
+$(".bg-op").on('click', function(e) {
+    $(this).toggleClass('active');
+});
+$(".reply-comment-actions").on('click', function(e) {
+    $(this).parent().toggleClass('active');
+});
 
 $(".mega-hotline").on({
     mouseenter: function() {
@@ -26,14 +32,55 @@ $(".mega-hotline").on({
         $(".overlay").removeClass('active');
     }
 });
+// 
+var lowerSlider = document.querySelector('#lower');
+var upperSlider = document.querySelector('#upper');
+
+
+if (upperSlider || null && lowerSlider || null) {
+    upperVal = parseInt(upperSlider.value);
+    lowerVal = parseInt(lowerSlider.value);
+
+    upperSlider.oninput = function() {
+        lowerVal = parseInt(lowerSlider.value);
+        upperVal = parseInt(upperSlider.value);
+
+        if (upperVal < lowerVal + 4) {
+            lowerSlider.value = upperVal - 4;
+
+            if (lowerVal == lowerSlider.min) {
+                upperSlider.value = 4;
+            }
+        }
+    };
+
+
+    lowerSlider.oninput = function() {
+        lowerVal = parseInt(lowerSlider.value);
+        upperVal = parseInt(upperSlider.value);
+
+        if (lowerVal > upperVal - 4) {
+            upperSlider.value = lowerVal + 4;
+
+            if (upperVal == upperSlider.max) {
+                lowerSlider.value = parseInt(upperSlider.max) - 4;
+            }
+
+        }
+    };
+}
+
 
 // 
 $(window).scroll(function() {
     if (this.scrollY > 85) {
 
         $(".header_mobile").addClass('active');
+        $(".content").addClass('active');
+
     } else {
         $(".header_mobile").removeClass('active');
+        $(".content").removeClass('active');
     }
 });
 
@@ -108,7 +155,6 @@ $('.products .slide-product').slick({
     slidesToScroll: 1,
     infinite: true,
     dots: false,
-
     autoplaySpeed: 4500,
     responsive: [{
             breakpoint: 1366,
@@ -134,41 +180,62 @@ $('.products .slide-product').slick({
     ],
 });
 
-// $('.vouchers-code').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     infinite: true,
-//     dots: false,
-//     draggable: true,
-//     vertical: true,
-//     autoplay: true,
-//     verticalSwiping: true,
-//     autoplaySpeed: 3500,
+$('.related-products-slide').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: false,
+    responsive: [{
+            breakpoint: 1366,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            }
+        }
+    ],
+});
+$('.viewed-products-slide').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: false,
+    responsive: [{
+            breakpoint: 1366,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            }
+        }
+    ]
+});
 
+var tabEl = document.querySelector('button[data-bs-toggle="tab"]')
+tabEl.addEventListener('hidden.bs.tab', function(event) {
+    $('.viewed-products-slide').slick('refresh');
+    event.target;
+    event.relatedTarget;
+});
 
-// });
+$(".img-product").mousemove(function(event) {
+    $('.hover-block').css("display", "block");
+    $('.hover-block').css("left", event.clientX + 10 + "px");
+    $('.hover-block').css("top", event.clientY - 40 + "px");
+});
 
-// $('.slide-product-detail').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 1500,
-//     vertical: true,
-//     verticalSwiping: true,
-//     infinite: true,
-//     dots: true,
-//     adaptiveHeight: true,
-//     draggable: true,
-//     responsive: [{
-//         breakpoint: 480,
-//         settings: {
-//             slidesToShow: 1,
-//             slidesToScroll: 1,
-//             vertical: false,
-//             horizontal: true,
-//             verticalSwiping: false,
-//             adaptiveHeight: false,
-//             dots: false,
-//         }
-//     }],
-// });
+$(".img-product").mouseout(function(event) {
+    $('.hover-block').css("display", "none");
+});
