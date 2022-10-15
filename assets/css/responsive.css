@@ -11,6 +11,45 @@
 }
 
 @media (max-width: 1170px) {
+
+    .review-info .rate,
+    .review-info .button-review {
+        width: 30%;
+    }
+
+    .user-info .first-letter {
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .review-info .rate-count {
+        width: calc(50% - 10px);
+        margin: 0 5px;
+    }
+
+    .review-info .button-review .btn-review {
+        padding: 5px 15px;
+    }
+
+    .product_name-detail {
+        font-size: 17px;
+        margin: 0 0 20px;
+        padding-left: 12px;
+    }
+
+    .review-info .rate {
+        font-size: 30px;
+    }
+
+    .related-news-item .title-news {
+        font-size: 14px;
+    }
+
+    .spct-title {
+        font-size: 16px;
+    }
+
     .list-unstyled ul {
         padding-top: 0;
     }
@@ -27,6 +66,10 @@
     .new-sort-zone nav {
         width: 100%;
         padding: 5px 0;
+    }
+
+    .product-desc .collapse:not(.show) {
+        height: 450px;
     }
 
     .pagination.product .page-item .page-link {
@@ -134,6 +177,39 @@
 }
 
 @media (max-width: 1024px) {
+    .review-info .button-review span {
+        font-size: 13px;
+        line-height: 1;
+    }
+
+    .rate-count .rate-item .rate-number {
+        width: 13%;
+    }
+
+    .static-content select {
+        width: 48%;
+    }
+
+    .rate-count .rate-item .total-rate {
+        width: 33%;
+    }
+
+    .review-info .button-review .btn-review {
+        padding: 5px 10px;
+    }
+
+    .button-buy .installment {
+        margin-top: 5px;
+    }
+
+    .price-detai .min-price {
+        font-size: 20px;
+    }
+
+    .button-buy a span {
+        font-size: 16px;
+    }
+
     .c-top {
         max-width: 100%;
     }
@@ -186,6 +262,204 @@
 }*/
 
 @media (max-width: 480px) {
+
+    .product-detail-top .col-12 {
+        padding: 0;
+    }
+
+    .content-detail-tab {
+        box-shadow: none;
+        padding: 12px 0;
+
+    }
+
+    .product-detail-static-content {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .list-review-item .reply-comment-content {
+        border: 0px solid #e8e8e8;
+        border-left-width: 5px;
+        background: #fff;
+        margin-bottom: 10px
+    }
+
+    .list-review-item .reply-comment-content::before,
+    .list-review-item .reply-comment-content::after {
+        border: 0;
+    }
+
+    .list-coment-item {
+        flex-wrap: wrap;
+    }
+
+    .user-info .coment-time,
+    .user-info .username {
+        text-align: left;
+        padding: 0;
+    }
+
+    .list-coment-item .user-info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .list-coment-item .user-info div {
+        margin-right: 4px;
+    }
+
+    .information .comment-content {
+        padding: 5px 0;
+    }
+
+    .list-coment-item .information {
+        width: 100%;
+    }
+
+    .user-info .first-letter {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        font-size: 15px;
+    }
+
+    .mini-content .p-name {
+        font-weight: bold;
+    }
+
+    .mini-content .p-time {
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+
+    .box-comment textarea {
+        font-size: 13px;
+    }
+
+    .review-box {
+        flex-wrap: wrap;
+    }
+
+    .review-box .review-left,
+    .review-box .review-right {
+        width: 100%;
+    }
+
+    .review-box .review-left {
+        margin-bottom: 10px;
+    }
+
+    .review-box .review-right input,
+    .review-box .review-right button {
+        width: 100%;
+    }
+
+    .list-comment .read-more a {
+        background: #fff;
+        color: #288ad6;
+        border: 1px solid #288ad6;
+    }
+
+    .review-info .rate-count {
+        width: 35%;
+        margin: 0 20px;
+    }
+
+    .rate-count .rate-item .progress {
+        display: none;
+    }
+
+    .rate-count .rate-item .rate-number {
+        width: 25%;
+    }
+
+    .rate-count .rate-item .total-rate {
+        width: 75%;
+        font-weight: 400;
+    }
+
+    .review-info .button-review {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .review-info .button-review span {
+        font-size: 13px;
+        line-height: 2.5;
+        display: block;
+        text-align: left;
+    }
+
+    .review-info .button-review .btn-review,
+    .review-box .review-right button {
+        padding: 10px;
+        width: 100%;
+        background: #fff;
+        color: #288ad6;
+        font-weight: 400;
+        border: 1px solid #288ad6;
+    }
+
+    .rate-count .rate-item {
+        line-height: 1.8;
+        font-weight: 300;
+    }
+
+    .product_name-detail {
+        font-size: 14px;
+        margin: 0 0 15px;
+        padding: 10px 0;
+        padding-left: 12px;
+    }
+
+    .review-info .rate {
+        font-size: 15px;
+        color: var(--black);
+        text-align: left;
+    }
+
+    .review-info {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .product-detail-bottom .right-col,
+    .product-detail-bottom .left-col {
+        width: 100%;
+    }
+
+    .content-detail-tab.related-news-block {
+        display: none;
+    }
+
+    .product-desc .collapse:not(.show) {
+        height: 360px;
+    }
+
+    .product-detail-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .bg-op a {
+        top: 0;
+        font-size: 12px;
+    }
+
+    .bg-op::after {
+        height: 75px;
+    }
+
+    .list-unstyled {
+        display: none;
+    }
+
     .min-price {
         color: var(--red);
     }

@@ -1373,3 +1373,6 @@
     font-weight: 300;
 }
 
+.store-list-item:nth-child(even) {
+    background: #fff;
+}

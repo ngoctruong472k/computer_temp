@@ -1,0 +1,120 @@
+.content.news_content {
+    background: #fff;
+}
+
+.img-news img {
+    width: 100%;
+}
+
+.news-menu-top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+}
+
+.news-menu-top li {
+    width: fit-content;
+    padding: 5px 10px;
+    background: var(--blue-dark);
+    margin: 0 10px 10px 0;
+}
+
+.news-menu-top li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.news_content .main-content {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.big-item .img-news {
+    position: relative;
+}
+
+.big-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.big-item .img-news::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.6;
+    background: linear-gradient(180deg, transparent 0, #000 65%, #000);
+}
+
+.big-item .d-emtry {
+    position: absolute;
+    bottom: -0;
+    left: 0;
+    padding: 20px;
+    transition: .3s all;
+    transform: translate3d(0, 40px, 0);
+}
+
+.big-item .d-emtry .s-review {
+    display: inherit;
+    width: fit-content;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 13px;
+    background: var(--red);
+    text-transform: uppercase;
+}
+
+.big-item .d-emtry a {
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 0;
+    display: block;
+    text-decoration: none;
+}
+
+.big-item .d-emtry span {
+    color: #fff;
+    font-size: 12px;
+    padding-right: 7px;
+}
+
+.big-item:hover .d-emtry {
+    transform: translateZ(0);
+    transition: .3s all;
+}
+
+.small-items {
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.small-items .p-title-news {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.small-item .item-news {
+    /*margin: 0 10px;*/
+}
+
+.blog-slide .slick-slider {
+    margin: 0 -10px;
+}
+
+.blog-slide .slick-slide {
+    margin-right: 10px;
+    margin-left: 10px;
+}
