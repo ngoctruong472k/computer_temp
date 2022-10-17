@@ -263,14 +263,14 @@ $('.small-items').slick({
             }
         },
         {
-            breakpoint: 1024,
+            breakpoint: 1171,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 3,
                 slidesToScroll: 1,
             }
         },
         {
-            breakpoint: 700,
+            breakpoint: 500,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,

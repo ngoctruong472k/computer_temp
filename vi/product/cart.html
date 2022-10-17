@@ -6,8 +6,135 @@
 {% include "fhh-framework/seo/include/home.html" %}
 {%endblock%}
 {% block content %}
-<section class="cart_content">
-    
+<section class="content cart_content">
+    <div class="container">
+        <div class="list-unstyled">
+            <ul>
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Giỏ hàng của bạn</a></li>
+            </ul>
+        </div>
+        <div class="h-title">
+            Giỏ hàng
+        </div>
+        <div class="main-content">
+            <div class="cart-content">
+                <div class="left-cart">
+                    <div class="header-cart-left">
+                    </div>
+                    <div class="cart-items">
+                        <div class="product-cart-item">
+                            <div class="cart-col-product">
+                                <input type="checkbox" name="">
+                                <div class="cart-p-info">
+                                    <div class="name-title">
+                                        Tất cả (2 sản phẩm)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-col-price">
+                                <div class="items-price">
+                                    <div class="price-title">Đơn giá</div>
+                                </div>
+                            </div>
+                            <div class="cart-col-qty">
+                                <div class="qty-title">Số lượng</div>
+                            </div>
+                            <div class="cart-col-total-price">
+                                <div class="total-price-title">
+                                    Thành tiền
+                                </div>
+                            </div>
+                            <div class="cart-col-delete">
+                                <a href="" title="Xóa khỏi giỏ hàng">
+                                    <img src="{{url_for('home.static_theme', filename='img/trash.svg')}}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-cart-item">
+                            <div class="cart-col-product">
+                                <input type="checkbox" name="">
+                                <a href="" class="img-product">
+                                    <img src="{{url_for('home.static_theme', filename='img/250_67190_demo_pcgm521_v3.jpg')}}" alt="">
+                                </a>
+                                <div class="cart-p-info">
+                                    <a href="">PC GAMING HACOM SHARK S08 (i5 12400/B660/16GB RAM/500GB SSD/RTX 3060 TI/700W)</a>
+                                    <div class="sku">Mã SP: PCGM547</div>
+                                    <div class="cart-p-offer">
+                                        <div class="cart-offer-title">
+                                            <i class="fas fa-gift"></i> Khuyến mãi
+                                        </div>
+                                        <div class="cart-offer-content">
+                                        </div>
+                                        <a href="" class="buy-later"><i class="fas fa-chevron-down"></i> Mua sau</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-col-price">
+                                <div class="items-price">
+                                    <span class="new-price">26.999.000₫</span>
+                                    <span class="old-price">29.999.000₫</span>
+                                </div>
+                            </div>
+                            <div class="cart-col-qty">
+                                <span>-</span>
+                                <input type="text" name="" value="1">
+                                <span>+</span>
+                            </div>
+                            <div class="cart-col-total-price">
+                                <span>26.999.000₫</span>
+                            </div>
+                            <div class="cart-col-delete">
+                                <a href="" title="Xóa khỏi giỏ hàng">
+                                    <img src="{{url_for('home.static_theme', filename='img/trash.svg')}}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-cart-item">
+                            <div class="cart-col-product">
+                                <input type="checkbox" name="">
+                                <a href="" class="img-product">
+                                    <img src="{{url_for('home.static_theme', filename='img/250_67190_demo_pcgm521_v3.jpg')}}" alt="">
+                                </a>
+                                <div class="cart-p-info">
+                                    <a href="">PC GAMING HACOM SHARK S08 (i5 12400/B660/16GB RAM/500GB SSD/RTX 3060 TI/700W)</a>
+                                    <div class="sku">Mã SP: PCGM547</div>
+                                    <div class="cart-p-offer">
+                                        <div class="cart-offer-title">
+                                            <i class="fas fa-gift"></i> Khuyến mãi
+                                        </div>
+                                        <div class="cart-offer-content">
+                                        </div>
+                                        <a href="" class="buy-later"><i class="fas fa-chevron-down"></i> Mua sau</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-col-price">
+                                <div class="items-price">
+                                    <span class="new-price">26.999.000₫</span>
+                                    <span class="old-price">29.999.000₫</span>
+                                </div>
+                            </div>
+                            <div class="cart-col-qty">
+                                <span>-</span>
+                                <input type="text" name="" value="1">
+                                <span>+</span>
+                            </div>
+                            <div class="cart-col-total-price">
+                                <span>26.999.000₫</span>
+                            </div>
+                            <div class="cart-col-delete">
+                                <a href="" title="Xóa khỏi giỏ hàng">
+                                    <img src="{{url_for('home.static_theme', filename='img/trash.svg')}}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-cart">2</div>
+            </div>
+        </div>
+    </div>
 </section>
 {% endblock %}
 {% endif %}

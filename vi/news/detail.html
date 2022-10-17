@@ -1,0 +1,153 @@
+{% if plugin.is_building %}
+{% include "sites/index.html" %}
+{% else %}
+{% extends "sites/theme_fhh_computer/vi/common/layout.html" %}
+{%block meta_seo%}
+{% include "fhh-framework/seo/include/home.html" %}
+{%endblock%}
+{% block content %}
+<section class="content news_content-detail">
+    <div class="top-news-detail">
+        <div class="container">
+            <div class="list-unstyled">
+                <ul>
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Tin tức</a></li>
+                    <li><a href="">Kiến thức phần cứng</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <div class="content-detail">
+                <div class=" left-news-detail">
+                    <div class="article-title">
+                        Card đồ họa tiêu thụ điện năng như thế nào?
+                    </div>
+                    <div class="author">
+                        <span>Đăng bỏi: <a href="">hacom</a> <i class="fas fa-minus"></i> 14-10-2022, 4:23 pm</span>
+                    </div>
+                    <div class="all-content">
+                        nội dung bài viết....
+                    </div>
+                    <div class="blog-comnent">
+                        <div class="comment-respond">
+                            <h3>Trả lời</h3>
+                            <div class="note-comment">
+                                <p>Email của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu *</p>
+                            </div>
+                            <form action="" class="comment-form">
+                                <label class="content-comment">
+                                    <span class="title-input">Bình luận </span>
+                                    <textarea></textarea>
+                                </label>
+                                <label class="username">
+                                    <span class="title-input">Tên *</span>
+                                    <input type="text" name="">
+                                </label>
+                                <label class="user-email">
+                                    <span class="title-input">Email *</span>
+                                    <input type="text" name="">
+                                </label>
+                                <label class="link-web">
+                                    <span class="title-input">Trang web</span>
+                                    <input type="text" name="">
+                                </label>
+                                <button class="btn btn-danger">PHẢN HỒI</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-news-sidebar">
+                    <div class="news-sidebar-block">
+                        <div class="title-sidebar">
+                            TIN MỚI NHẤT
+                        </div>
+                        <div class="content-news-sidebar">
+                            <div class="sidebar-news-item">
+                                <a href="" class="img-news">
+                                    <img src="{{url_for('home.static_theme', filename='img/1612_z3759955075293_d496ca1a98ab5c49610cc1d285612a4a.jpg')}}" alt="">
+                                </a>
+                                <div class="news-desc">
+                                    <a href="">Có nên mua card trâu của giới đào coin hay không?</a>
+                                    <p>Giá VGA trên thị trường hiện nay đang chạm đáy, và đây cũng là món hời của không ít anh em chờ thủ bao lâu nay. Tuy nhiên, đi kèm với đó cũng có một số ...</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-news-item">
+                                <a href="" class="img-news">
+                                    <img src="{{url_for('home.static_theme', filename='img/1612_z3759955075293_d496ca1a98ab5c49610cc1d285612a4a.jpg')}}" alt="">
+                                </a>
+                                <div class="news-desc">
+                                    <a href="">Có nên mua card trâu của giới đào coin hay không?</a>
+                                </div>
+                            </div>
+                            <div class="sidebar-news-item">
+                                <a href="" class="img-news">
+                                    <img src="{{url_for('home.static_theme', filename='img/1612_z3759955075293_d496ca1a98ab5c49610cc1d285612a4a.jpg')}}" alt="">
+                                </a>
+                                <div class="news-desc">
+                                    <a href="">Có nên mua card trâu của giới đào coin hay không?</a>
+                                </div>
+                            </div>
+                            <div class="sidebar-news-item">
+                                <a href="" class="img-news">
+                                    <img src="{{url_for('home.static_theme', filename='img/1612_z3759955075293_d496ca1a98ab5c49610cc1d285612a4a.jpg')}}" alt="">
+                                </a>
+                                <div class="news-desc">
+                                    <a href="">Có nên mua card trâu của giới đào coin hay không?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-sidebar-block sidebar-style-2">
+                        <div class="title-sidebar">
+                            BÀI VIẾT NHIỀU NGƯỜI XEM
+                        </div>
+                        <div class="content-news-sidebar">
+                            <div class="sidebar-news-item">
+                                <a href="" class="img-news">
+                                    <img src="{{url_for('home.static_theme', filename='img/1612_z3759955075293_d496ca1a98ab5c49610cc1d285612a4a.jpg')}}" alt="">
+                                </a>
+                                <div class="news-desc">
+                                    <a href="">Có nên mua card trâu của giới đào coin hay không?</a>
+                                    <p>Giá VGA trên thị trường hiện nay đang chạm đáy, và đây cũng là món hời của không ít anh em chờ thủ bao lâu nay. Tuy nhiên, đi kèm với đó cũng có một số ...</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-news-item">
+                                <a href="" class="img-news">
+                                    <img src="{{url_for('home.static_theme', filename='img/1612_z3759955075293_d496ca1a98ab5c49610cc1d285612a4a.jpg')}}" alt="">
+                                </a>
+                                <div class="news-desc">
+                                    <a href="">Có nên mua card trâu của giới đào coin hay không?</a>
+                                    <p>Giá VGA trên thị trường hiện nay đang chạm đáy, và đây cũng là món hời của không ít anh em chờ thủ bao lâu nay. Tuy nhiên, đi kèm với đó cũng có một số ...</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-news-item">
+                                <a href="" class="img-news">
+                                    <img src="{{url_for('home.static_theme', filename='img/1612_z3759955075293_d496ca1a98ab5c49610cc1d285612a4a.jpg')}}" alt="">
+                                </a>
+                                <div class="news-desc">
+                                    <a href="">Có nên mua card trâu của giới đào coin hay không?</a>
+                                    <p>Giá VGA trên thị trường hiện nay đang chạm đáy, và đây cũng là món hời của không ít anh em chờ thủ bao lâu nay. Tuy nhiên, đi kèm với đó cũng có một số ...</p>
+                                </div>
+                            </div>
+                            <div class="sidebar-news-item">
+                                <a href="" class="img-news">
+                                    <img src="{{url_for('home.static_theme', filename='img/1612_z3759955075293_d496ca1a98ab5c49610cc1d285612a4a.jpg')}}" alt="">
+                                </a>
+                                <div class="news-desc">
+                                    <a href="">Có nên mua card trâu của giới đào coin hay không?</a>
+                                    <p>Giá VGA trên thị trường hiện nay đang chạm đáy, và đây cũng là món hời của không ít anh em chờ thủ bao lâu nay. Tuy nhiên, đi kèm với đó cũng có một số ...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</section>
+{% endblock %}
+{% endif %}
