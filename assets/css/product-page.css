@@ -84,6 +84,7 @@
     background: #fff;
     width: calc(16.66666667% - 5px);
     padding: 10px;
+    height: fit-content;
 }
 
 
@@ -170,6 +171,7 @@
 .right-content-product {
     background: #fff;
     width: calc(83.33333333% - 5px);
+    height: fit-content;
 }
 
 .sort-zone,
@@ -275,7 +277,7 @@
     font-size: 14px;
     margin-right: 15px;
     border-color: #ccc;
-
+    outline: 0;
 }
 
 .sort-zone .btn-blue-dark {
@@ -1399,6 +1401,8 @@
     margin-bottom: 15px;
     font-size: 14px;
     background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%);
 }
 
 .cart_content .main-content {
@@ -1502,13 +1506,10 @@
     width: 30px;
 }
 
-/*.cart-col-qty .qty-title {
-    width: 100px;
+.cart-col-qty .qty-title {
+    width: 100%;
 }
 
-.cart-col-price .price-title {
-    width: 150px;
-}*/
 .cart-col-qty,
 .cart-col-price,
 .cart-col-total-price {
@@ -1522,9 +1523,317 @@
     width: 14%;
 }
 
-/*.new-qty {
-    width: 100%;
+.voucher {
+    padding: 10px 12px;
+    background: #fff;
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%);
+}
+
+.voucher input {
+    width: 80%;
+    outline: 0;
+    font-size: 14px;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+}
+
+.voucher a {
+    width: 20%;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-}*/
+    border-radius: 0;
+}
+
+.voucher .btn-blue-dark {
+    padding: 5px 10px;
+}
+
+.box-cart-total-price {
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%);
+
+    background: #fff;
+}
+
+.box-cart-total-price .d-flex {
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-bottom: solid 1px #e1e1e1;
+}
+
+.box-cart-total-price .d-flex.last {
+    border-bottom: 0;
+}
+
+.box-cart-total-price p {
+    margin: 0;
+    font-size: 14px;
+    padding: 0 12px;
+    text-align: right;
+}
+
+.showroom-offers ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    border: 1px solid #e5e5e5;
+}
+
+.showroom-offers li {
+    text-align: center;
+    width: 20%;
+}
+
+.showroom-offers i {
+    font-size: 25px;
+    color: #fff;
+}
+
+.showroom-offers li .box {
+    width: 55px;
+    height: 55px;
+    background: var(--blue-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.top-contact {
+    padding: 10px 12px;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.showroom-offers p {
+    margin: 0;
+    font-weight: 600;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.showroom-offers p span {
+    color: var(--red);
+}
+
+.top-contact h1 {
+    font-size: 30px;
+    color: var(--red);
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 0;
+
+}
+
+.top-contact h1 span {
+    color: var(--blue-dark);
+}
+
+.content_contact .main-content {
+    background: var(--bg-body);
+}
+
+.main-content-outer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.main-content-outer-item {
+    width: calc(100% / 2 - 7.5px);
+    background: #fff;
+    padding: 10px 12px;
+}
+
+.main-content-outer-item .title-content {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--red);
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.main-content-outer-item ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.main-content-outer-item ul li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-content-outer-item ul a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.main-content-outer-item ul li span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--blue-dark);
+    margin-right: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.main-content-outer-item ul li span i {
+    color: #fff;
+    font-weight: bold;
+}
+
+.main-content-outer-item p a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.showroom-element {
+    background: #fff;
+    margin: 0 0 15px;
+}
+
+.showroom-map {
+    padding: 12px 0;
+}
+
+.showroom-map a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.showroom-map a span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s all linear;
+    color: transparent;
+}
+
+.showroom-map a img {
+    width: 100%;
+}
+
+.showroom-map a span:hover {
+    transition: .5s all linear;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+
+.address-info .title-content {
+    color: var(--red);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.address-info .title-content span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--red);
+    color: #fff;
+    margin-right: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.address-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.address-info ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.address-info ul li a {
+    font-size: 16px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.address-info ul li span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border: 1px dashed #888;
+    border-radius: 50%;
+}
+
+.current-cate-text {
+    font-size: 25px;
+    color: #3c4a65;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.search-page .sort-zone .select-filter,
+.search-page .sort-zone nav {
+    width: 50%;
+}
+
+.search-page .sort-zone .select-filter select {
+    width: 29%;
+}
+
+.search-menu-top {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+
+.search-menu-top li {
+    width: calc(50% - 5px);
+    background: var(--blue-dark);
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.search-menu-top li a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.horizontal-filter.mb {
+    display: none;
+}

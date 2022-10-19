@@ -192,7 +192,64 @@
 }
 
 @media (max-width: 1024px) {
+    .search-page .sort-zone .select-filter select {
+        width: auto;
+    }
 
+    .cate-product-list .col-sm-4 {
+        width: 33.33333333%;
+    }
+
+    .category-product-page .cate-product-list .row .col-md-3:nth-child(3n),
+    .search-page .cate-product-list .row .col-md-3:nth-child(3n) {
+        border-right: 0;
+    }
+
+    .category-product-page .cate-product-list .row .col-md-3:nth-child(4n),
+    .search-page .cate-product-list .row .col-md-3:nth-child(4n) {
+        border-right: 1px solid #d7d7d7;
+    }
+
+    .filter-price-box .min-filter,
+    .filter-price-box .max-filter {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .left-content-product {
+        width: calc(20% - 5px);
+    }
+
+    .right-content-product {
+        width: calc(80% - 5px);
+    }
+
+    .address-info ul li span {
+        width: 35px;
+        height: 35px;
+    }
+
+    .address-info .title-content span {
+        width: 40px;
+        height: 40px;
+    }
+
+    .address-info .title-content {
+        font-size: 20px;
+    }
+
+    .address-info ul li {
+        padding: 5px 0;
+    }
+
+    .showroom-offers li .box {
+        width: 45px;
+        height: 45px;
+    }
+
+    .showroom-offers i {
+        font-size: 20px;
+    }
 
     .news_content .col-sm-7 {
         width: 58.33333333%;
@@ -293,9 +350,156 @@
     .header_bottom .header_bottom-right {
         width: 41%;
     }
+
+    .n-filter a {
+        font-size: 14px;
+    }
+
+    .n-filter {
+        margin: 10px 0;
+    }
+
+    .sort-zone,
+    .horizontal-price-filter {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .horizontal-price-filter {
+        padding-top: 10px;
+    }
+
+    .horizontal-price-filter input {
+        padding: 3px 15px;
+    }
 }
 
 @media (max-width: 480px) {
+	.category-product-page .list-unstyled{
+		display: block;
+	}
+	.category-product-page .list-unstyled .total-product{
+		display: none;
+	}
+    .horizontal-filter.mb {
+        display: block;
+    }
+
+    .search-menu-top {
+        display: flex;
+    }
+
+    .search-page .cate-product-list .row .col-md-3:nth-child(3n),
+    .category-product-page .cate-product-list .row .col-md-3:nth-child(3n) {
+        border-right: 1px solid #d7d7d7;
+    }
+
+    .search-page .list-unstyled {
+        display: block;
+    }
+
+    .current-cate-text {
+        font-size: 14px;
+    }
+
+    .cate-product-list .col-6 {
+        width: 50%
+    }
+
+    .address-info .title-content span {
+        width: auto;
+        height: auto;
+        color: var(--bs-red);
+        background: transparent;
+        position: relative;
+
+    }
+
+    .content_contact .main-content {
+        background: #fff;
+    }
+
+    .address-info .title-content span:before {
+        content: "\f04b";
+        font-weight: 900;
+        font-family: 'Font Awesome\ 5 Free';
+        margin-right: 10px;
+    }
+
+    .showroom-offers ul {
+        flex-wrap: wrap;
+        border: 0;
+        padding: 0;
+    }
+
+    .main-content-outer-item {
+        width: 100%;
+        padding: 0;
+    }
+
+    .address-info .title-content {
+        font-size: 18px;
+        color: var(--black);
+        border: 1px solid #666;
+        border-left-width: 0;
+        border-right-width: 0;
+        padding: 10px 0;
+        margin: 15px 0;
+    }
+
+    .main-content-outer {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .top-contact {
+        padding: 0;
+    }
+
+    .main-content-outer-item p {
+        margin-bottom: 0;
+    }
+
+    .showroom-element .col-md-6 {
+        padding: 0;
+    }
+
+    .top-contact h1 {
+        color: var(--black);
+        padding: 0;
+        font-size: 28px;
+    }
+
+    .showroom-map {
+        display: none;
+    }
+
+    .top-contact h1 span {
+        color: var(--red);
+    }
+
+    .showroom-offers li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .showroom-offers i {
+        font-size: 16px;
+    }
+
+    .showroom-offers p {
+        font-size: 14px;
+    }
+
+    .showroom-offers li .box {
+        margin: 0;
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
     .news-sidebar-block {
         padding: 20px 0 0;
     }
@@ -649,6 +853,29 @@
     .horizontal-price-filter,
     .left-content-product {
         display: none;
+    }
+
+    .search-page .sort-zone {
+        display: block;
+    }
+
+    .search-page .sort-zone nav {
+        display: none;
+    }
+
+    .search-page .sort-zone .select-filter {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .search-page .sort-zone .select-filter select {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: calc(50% - 5px);
+        background-color: #dcdcdc;
     }
 
     .right-content-product {

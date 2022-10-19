@@ -1,0 +1,122 @@
+{% if plugin.is_building %}
+{% include "sites/index.html" %}
+{% else %}
+{% extends "sites/theme_fhh_computer/vi/common/layout.html" %}
+{%block meta_seo%}
+{% include "fhh-framework/seo/include/home.html" %}
+{%endblock%}
+{% block content %}
+<section class="content content_contact">
+    <div class="container">
+        <div class="top-contact">
+            <h1>Hệ thống <span>19</span> showroom của hacom</h1>
+            <div class="showroom-offers">
+                <ul>
+                    <li>
+                        <div class="box">
+                            <i class="fa fa-shield" aria-hidden="true"></i>
+                        </div>
+                        <p>Giữ xe <span>miễn phí</span></p>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <p>WiFi <span>miễn phí</span></p>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <p>Đồ uống <span>miễn phí</span></p>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <p>Phòng chờ <span>tiện nghi</span></p>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <p>Thanh toán <span>đa dạng</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content-outer">
+            <div class="main-content-outer-item">
+                <div class="title-content">TẬN TÂM – TRÁCH NHIỆM – SÁNG TẠO – KHÁC BIỆT</div>
+                <ul>
+                    <li><span><i class="fas fa-check"></i></span><a href="">Uy tín 20 năm xây dựng và phát triển</a></li>
+                    <li><span><i class="fas fa-check"></i></span><a href="">Trả góp lãi suất 0% toàn bộ giỏ hàng</a></li>
+                    <li><span><i class="fas fa-check"></i></span><a href="">Trả bảo hành tận nơi sử dụng</a></li>
+                    <li><span><i class="fas fa-check"></i></span><a href="">Bảo hành tận nơi cho doanh nghiệp</a></li>
+                    <li><span><i class="fas fa-check"></i></span> <a href="">Vệ sinh miễn phí trọn đời PC, Laptop</a></li>
+                    <li><span><i class="fas fa-check"></i></span> <a href="">Vệ sinh miễn phí trọn đời PC, Laptop</a></li>
+                </ul>
+            </div>
+            <div class="main-content-outer-item">
+                <div class="title-content">Liên hệ</div>
+                <span>Hotline: <strong>1900.1903</strong></span>
+                <ul>
+                    <li><span>0</span><a href="">Chăm sóc khách hàng (8h - 21h30)</a></li>
+                    <li><span>1</span><a href="">Mua hàng trực tuyến (8h - 24h)</a></li>
+                    <li><span>2</span><a href="">Hỗ trợ kỹ thuật (9h - 21h30)</a></li>
+                    <li><span>3</span><a href="">Dịch vụ kỹ thuật - bảo hành (9h - 17h30)</a></li>
+                </ul>
+                <div class="title-content">HỢP TÁC</div>
+                <p>Hợp tác kinh doanh: <strong>Mr. Tùng - <a href="">0936 027 037</a> - <a href="">tungth@hacom.vn</a></strong>
+                </p>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="row showroom-element">
+                <div class="col-md-6">
+                    <div class="showroom-map">
+                        <a rel="nofollow" target="_blank" href="https://maps.google.com/maps?ll=21.001842,105.843658&amp;z=16&amp;t=m&amp;hl=vi&amp;gl=US&amp;mapclient=embed&amp;cid=5799041927068950788"><img src="{{url_for('home.static_theme', filename='img/hacomhaibatrung.jpg')}}" class="loading" data-was-processed="true"><span>Nhấn vào để xem bản đồ chi tiết</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="address-info">
+                        <div class="title-content"><span>1</span>HACOM - HAI BÀ TRƯNG</div>
+                        <ul>
+                            <li><span><i class="fas fa-map-marker-alt"></i></span><a href="">Số 131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</a></li>
+                            <li><span><i class="fas fa-photo-video"></i></span><a href="">Hình ảnh thực tế showroom</a></li>
+                            <li><span><i class="fas fa-search-plus"></i></span><a href="">Xem bản đồ đường đi</a></li>
+                            <li><span><i class="fas fa-phone-alt"></i></span>Tel: <a href=""> 1900 1903 (máy lẻ 25398)</a>-<a href="">(024) 36285551</a></li>
+                            <li><span><i class="fas fa-wrench"></i></span><a href="">Bảo hành: 1900 1903 (máy lẻ 25393)</a></li>
+                            <li><span><i class="far fa-envelope"></i></span><a href="">Email: kdbl.haibatrung@hacom.vn</a></li>
+                            <li><span><i class="far fa-clock"></i></span><a href="">Thời gian mở cửa: Từ 8h-20h hàng ngày</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row showroom-element">
+                <div class="col-md-6">
+                    <div class="showroom-map">
+                        <a rel="nofollow" target="_blank" href="https://maps.google.com/maps?ll=21.001842,105.843658&amp;z=16&amp;t=m&amp;hl=vi&amp;gl=US&amp;mapclient=embed&amp;cid=5799041927068950788"><img src="{{url_for('home.static_theme', filename='img/hacomhaibatrung.jpg')}}" class="loading" data-was-processed="true"><span>Nhấn vào để xem bản đồ chi tiết</span></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="address-info">
+                        <div class="title-content"><span>19</span>HACOM - HAI BÀ TRƯNG</div>
+                        <ul>
+                            <li><span><i class="fas fa-map-marker-alt"></i></span><a href="">Số 131 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</a></li>
+                            <li><span><i class="fas fa-photo-video"></i></span><a href="">Hình ảnh thực tế showroom</a></li>
+                            <li><span><i class="fas fa-search-plus"></i></span><a href="">Xem bản đồ đường đi</a></li>
+                            <li><span><i class="fas fa-phone-alt"></i></span>Tel: <a href=""> 1900 1903 (máy lẻ 25398)</a>-<a href="">(024) 36285551</a></li>
+                            <li><span><i class="fas fa-wrench"></i></span><a href="">Bảo hành: 1900 1903 (máy lẻ 25393)</a></li>
+                            <li><span><i class="far fa-envelope"></i></span><a href="">Email: kdbl.haibatrung@hacom.vn</a></li>
+                            <li><span><i class="far fa-clock"></i></span><a href="">Thời gian mở cửa: Từ 8h-20h hàng ngày</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% endif %}
